@@ -1,145 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dimfr|Portofolio</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-	<style>
-		body{
-			font-family: poppins;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.jpg"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+    <style>
+        * {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+        #text-2 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            opacity: 0;
+            color: black;
+        }
+
+        #showButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            color: white;
+        }
+
+        #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fadeUp 2s ease forwards;
+        }
+
+        #text-1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fadeUp2 2s ease forwards;
+            display: none;
+        }
+
+        #text-2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+            display: none;
+        }
+
+        .card-img-top{
+            object-fit: cover;
+            object-position: center;
+            height: 320px !important;
+        }
+        .card-text{
+            text-align: justify;
+          }
+         
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, 30%);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @keyframes fadeUp2 {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, 30%);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, 30%);
+            }
+        }
+        #flower{
+            display: none;
+        }
+
+    </style>
+    <title>Happy Birthday Cantik</title>
 </head>
-<body id="Home" id="About" id="contact" id="social" id="project">
-<section>
-	<!--navigation------------------------->
-	<nav>
-	<!--logo-->
-	<a href="Home" class="logo">Dimfr</a>
-	<!--menu-->
-	<ul>
-	<li><a href="#Home">Home</a></li>
-	<li><a href="#About">About</a></li>
-	<li><a href="#project">Project</a></li>
-	<li><a href="#contact">Contact</a></li>
-	</ul>
-	<!--bars--------------->
-	<div class="toggle"></div>
-	</nav>
-  </section>
+<body>
+   <h1 id="header">hai</h1>
+   <button class="btn btn-info" id="showButton">Buka undangan</button>
+   <div id="text" style="display: none;">
+    <div class="card" style="width: 25rem;">
+        <img src="img/1.jpg" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Hai sayang. ngga kerasa udah <strong>2x</strong> ya kamu <strong>ngerayain ulang tahun bareng aku</strong> kerasa sih sebenernya. tapi aku seneng ngejalanin semua bareng kamu. semoga semakin bertambah e umur kamu, kamu makin bisa berpikiran dewasa, semakin bertambah ilmu & wawasan kamu, semoga tambah cepet meraih kesuksesan, tetep bareng-bareng sama aku, bisa ngebanggain orang-orang terdekat kamu, dan dipercepat datangnya hal-hal terbaik buat kamu</p>
+        </div>
+      </div>
+    </div>
+    <div id="text-1" style="display: none;" >
+        <div class="card" style="width: 25rem;">
+            <div class="card-body">
+              <p class="card-text">sebenernya buat kado yang aku kasih itu udah tak plaining ke arah sepatu solder sama esp. tapi aku mau kamu sendiri yang pilih soalnya aku takut nanti pas tak pilihin kamu gak cocok terus malah ngga kepake. maaf yaa sayang ternyata sepatunya full putih bukan cream, tapi aku liate itu kayak cream. buat sepatunya semoga kamu suka yaaa, dipake yaa sayang hehehe. buat soldernya aku tau ko solder kamu itu udah kurang enak, terus kamu nanti bakal butuh solder buat praktikum / tugas, semoga bermanfaat yaa sayang. buat espnya sengaja tak suruh pilih esp 32/8266 yang dua-duanya bisa kehubung wifi, soalnya kamu pernah cerita ke aku pingin belajar buat coding hehe jadi seengaknya aku ngefasilitasin kamu meski dikit. semangat ya sayang belajarnya semoga yang tak beri ini meskipun harganya murah bisa bermanfaat buat kamu</p>
+            </div>
+          </div>
+    </div>
+    <div id="text-2" style="display: none;">
+        <h1>Makasih ya udah mau nemenin aku sampe sekarang :)</h1>
+    </div>
+   <script>
+       const h1 = document.getElementById('header');
+       const button = document.getElementById('showButton');
+       const text = document.getElementById('text');
+       const text1 = document.getElementById('text-1');
+       const text2 = document.getElementById('text-2');
+       const flower = document.getElementById('flower');
 
+       // Munculkan button setelah 3 detik
+       setTimeout(() => {
+           h1.style.animation = 'fadeOut 2s ease forwards';
+           button.style.animation = 'fadeIn 2s ease 1s forwards';
+       }, 3000);
 
-<!--home-->
-	<div class="text-container" id="Home">
-		<p>Hello,</p>
-		<p>I&#8217;M Dimas Firmansyah</p>
-		<p>Software Engineering<br>Student</p>
-			<a href="https://www.instagram.com/xdimfr/"><button class="hire-btn">Hire me</button></a>
-			<a href="404.html"><button class="down-cv">Download CV</button></a>
-	</div>
-	<img alt="model" class="model" src="images/profile.png">
-<!-- finished home -->
+       // Klik pada button untuk menampilkan teks dengan animasi fade in
+       button.addEventListener('click', () => {
+           h1.style.display = 'none';
+           button.style.display = 'none';
+           text.style.display = 'block';
 
+           // Setelah 2 detik, munculkan text-1
+           setTimeout(() => {
+               text.style.animation = 'fadeOut 2s ease forwards';
+               text1.style.display = 'block';
+           }, 15000);
 
-<!--About Me-->
+           // Setelah 2 detik, munculkan text-2
+           setTimeout(() => {
+               text1.style.animation = 'fadeOut 2s ease forwards';
+               text2.style.display = 'block';
+               text2.style.animation = 'fadeIn 2s ease forwards';
+           }, 40000);
 
-	<div class="about-container" id="About">
-		<!--img-->
-		<img src="images/about.png"/>
-			<!--about-me-text-->
-			<div class="about-text">
-				<p>About Me</p>
-				<p>Software Engineering Student</p>
-				<p>Hello, my name is Dimas Firmansyah. I am a student at SMKN 2 SURABAYA who majored in software engineering. I am currently 17 years old. I currently live in the city of Surabaya. I have a hobby of playing football and working on a project website.</p>
-				<p>I'm a junior developer. every suggestion from you is very important to me, and if there is a message for me can directly contact my social media</p>
-				<a href="https://www.instagram.com/xdimfr/"><button>Hire Me</button></a>
-				<a href="404.html"><button>Download CV</button></a>
-			</div>
-	</div>
-<!--finished About Me-->
-
-
-<!--My Project-->
-<div class="services" id="project">
-	<!--text-->
-	<div class="services-text ">
-		<p>My Project</p>
-		<p>latest project</p>
-		<p>During my internship and free time, I created several projects. when i make a project i often ask my friends and see some from internet, be it articles from google or watching videos from youtube</p>
-	</div>
-	
-	<div class="box-container">
-		<!--1------------->
-		<div class="box-1">
-			<span>1</span>
-			<p class="heading">hajiumrohamanah.id</p>
-			<p class="details">This website is one of my internship assignments made using wordpress, and using the elementor plugin. This website contains information and registration for Hajj and Umrah.</p>
-			<a href="http://hajiumrohamanah.id/"><button>Visit More</button></a>
-		</div>
-	   <!--2------------->
-		<div class="box-2">
-			<span>2</span>
-			<p class="heading">lakki.id</p>
-			<p class="details">this website is my internship assignment in collaboration with my friend, this website was created using wordpress using elementor and woocommerce plugins. This website is an e-commerce website that focuses on men's fashion.</p>
-			<a href="http://lakki.id/"><button>Visit More</button></a>
-		</div>
-		<!--3------------->
-		<div class="box-3">
-			<span>3</span>
-			<p class="heading">reyscarf.dmc.zone</p>
-			<p class="details">This website is one of my internship assignments made using wordpress, and using elementor and woocommerce plugins. This website is an e-commerce website that is engaged in hijab fashion.</p>
-			<a href="https://reyscarf.dmc.zone/"><button>Visit More</button></a>
-		</div>
-	</div>
-</div>
-<!--finished project-->
-
-
-<!--contact me-->
-<div class="contact-me" id="contact">
-	<p>If You Have Any Suggestions Or Questions For Me?</p>
-	<a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSKjRPgnJCCPKcDtWPPdbjFLmPnhBQwwCzDWZTXmhzzVbNvcHgFqkdFffvFvQrrnnpbBPZdM"><button>Contact me</button></a>
-</div>
-</section>
-<!-- finished contact me -->
-
-
-<!--footer--------------->
- <footer>
-	 <!--heading-->
-	 <hr>
-  <p>My Social Media</p>
-	 <!--paragraph-->
-	 <p>Visit my social media to find out more about me</p>
-	 <!--social-->
-	<div class="social-icons">
-	<a href="https://www.instagram.com/xdimfr/"><i class="fab fa-instagram"></i></a>
-	<a href="https://www.youtube.com/channel/UClNiNwxS3hx11WaudLhtNjw"><i class="fab fa-youtube"></i></a>
-	</div>
-	 <!--copyright-->
-	 <p class="copyright">Copyright by <b>dimfr</b></p>
-</footer>
-<!--finished footer -->
-
-
-<!--social-attach-bar-->
-<div class="social">
-	<a href="https://www.instagram.com/xdimfr/"><i class="fab fa-instagram"></i></a>
-	<a href="https://www.youtube.com/channel/UClNiNwxS3hx11WaudLhtNjw"><i class="fab fa-youtube"></i></a>
-</div>
-<!-- finished attach bar -->
-
- <!--JQUery-------------------->
-<script type="text/javascript" src="js/JQuery.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$('.toggle').click(function(){
-			$('.toggle').toggleClass('active')
-			$('nav').toggleClass('active')
-		})
+           // Setelah 2 detik, munculkan gambar bunga
+           setTimeout(() => {
+               text2.style.animation = 'fadeOut 2s ease forwards';
+               flower.style.display = 'block';
+               flower.style.animation = 'fadeIn 2s ease forwards';
+           }, 42000);
+       });
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+ 
 </body>
-
 </html>
